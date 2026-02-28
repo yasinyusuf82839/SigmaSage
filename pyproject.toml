@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigmasage"
+version = "0.1.0"
+description = "Sigma-style detection engine vertical slice"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+sigmasage = "sigmasage.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sigmasage*"]
